@@ -1,0 +1,114 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  border-bottom: 1px solid tomato;
+  padding: 0 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.headingTitle {
+  display: inline-block;
+  font-size: 40px;
+  font-family: "algerian";
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: tomato;
+}
+.heading{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.heading h1 span {
+  position: relative;
+  bottom: 14px;
+  right: 4px;
+  font-size: 17px;
+  color: tomato;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li span {
+  position: relative;
+  right: 7px;
+  bottom: 15px;
+  font-size: 11px;
+  font-weight: 800;
+  color: white;
+  background-color: tomato;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.navbar .navLink {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "algerian";
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: tomato;
+  transition: all 0.3s;
+}
+
+.navbar .navLink2 {
+  display: inline-block;
+  font-size: 20px;
+  color: tomato;
+  margin-left: 2rem;
+}
+
+.navbar .navLink:hover,
+.navbar .navLink2:hover {
+  color: rgb(196, 51, 26);
+  text-shadow: 1px 1px 2px rgb(247, 116, 93);
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    height: 4rem;
+    padding: 0 0.8rem;
+    top: 0;
+    width: 95%;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .headingTitle {
+    font-size: 30px;
+  }
+
+  .heading h1 span {
+    bottom: 12px;
+    font-size: 12px;
+  }
+  .navbar .navLink2,
+  .navbar .navLink {
+    font-size: 16px;
+  }
+
+  .navbar li span {
+    bottom: 10px;
+    padding: 3px;
+    font-size: 7px;
+  }
+}
